@@ -91,3 +91,399 @@ Migrating to AddTextReviewToReview (20091018165024)
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("authors")[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("books")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "books" ADD "isbn" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "books" ADD "title" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "books" ADD "publisher" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "books" ADD "catagory" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "books" ADD "price" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "books" ADD "min_required" integer[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091018175008')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: duplicate column name: price: ALTER TABLE "books" ADD "price" decimal(8,2) DEFAULT 0.0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "price" integer, "min_required" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "books"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "price" integer DEFAULT 0.0, "min_required" integer) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_books"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091018175919')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("authors")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("authors")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TEMPORARY TABLE "altered_books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "price" integer DEFAULT 0, "min_required" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDROP TABLE "books"[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "price" integer, "min_required" integer) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_books"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091018175919'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "price" integer, "min_required" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "books"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "price" integer DEFAULT 0.0, "min_required" integer) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_books"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091018175919')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: duplicate column name: price: ALTER TABLE "books" ADD "price" integer[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("authors")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+Migrating to RemovePrice (20091018182044)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE TEMPORARY TABLE "altered_books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "price" integer DEFAULT 0, "min_required" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "books"[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "min_required" integer) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_books"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091018182044')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+Migrating to RemovePrice (20091018182044)
+Migrating to AddDecimalPriceToBooks (20091018182152)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "min_required" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "books"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "isbn" integer, "title" varchar(255), "publisher" varchar(255), "catagory" varchar(255), "min_required" integer, "price" decimal(8,2) DEFAULT 0.0) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_books"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091018182152')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reviews")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20091017172119)
+Migrating to CreateAuthors (20091017172326)
+Migrating to CreateReviews (20091017172338)
+Migrating to AddFirstAndLastNameToAuthor (20091018164528)
+Migrating to AddTextReviewToReview (20091018165024)
+Migrating to AddAttributesToBook (20091018175008)
+Migrating to AddDecimalTypeToPriceOfBook (20091018175919)
+Migrating to RemovePrice (20091018182044)
+Migrating to AddDecimalPriceToBooks (20091018182152)
+Migrating to AddBookIdToReviewsAndAuthors (20091018184210)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "authors" ADD "book_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "reviews" ADD "book_id" integer[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091018184210')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reviews")[0m
+  [4;36;1mBook Create (0.8ms)[0m   [0;1mINSERT INTO "books" ("isbn", "updated_at", "min_required", "title", "price", "publisher", "catagory", "created_at") VALUES(NULL, '2009-10-18 18:45:24', NULL, NULL, 0.0, NULL, NULL, '2009-10-18 18:45:24')[0m
+  [4;35;1mReview Create (0.6ms)[0m   [0mINSERT INTO "reviews" ("updated_at", "review", "created_at", "book_id") VALUES('2009-10-18 18:45:47', NULL, '2009-10-18 18:45:47', 1)[0m
+  [4;36;1mReview Load (0.5ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".book_id = 1) [0m
+  [4;35;1mAuthor Create (1.6ms)[0m   [0mINSERT INTO "authors" ("updated_at", "first_name", "last_name", "created_at", "book_id") VALUES('2009-10-18 18:46:27', NULL, NULL, '2009-10-18 18:46:27', 1)[0m
+  [4;36;1mAuthor Load (0.6ms)[0m   [0;1mSELECT * FROM "authors" WHERE ("authors".book_id = 1) [0m

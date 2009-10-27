@@ -1,0 +1,74 @@
+ul.book {
+	text-decoration: none;
+	list-style-type: none;
+	float: left;
+}
+
+ul.book li {
+	padding-bottom: 5px;
+}
+ 
+ul.book .title{
+	font-size: 1.8em;
+	padding: 0px;
+}
+
+ul.book .price {
+	font-size: 1.5em;
+	padding-bottom: 16px;
+	color: red;
+}
+
+ul.book .author {
+	color: gray;
+	font-size: 1.2em;
+}
+
+ul.book #add_to_cart {
+	margin-left: 10px;
+	background-color: #999;
+	text-decoration: none;
+	color: #FFF;
+	display: inline;
+	padding: 5px;
+}
+
+ul.book #add_to_cart:hover {
+	background-color: #333;
+}
+
+#book img{
+	padding-top: 5px;
+	float: left;
+}
+
+div#book {
+	border-bottom: dashed;
+	float: left;
+	width: 100%;
+}
+
+/* New Book */
+
+.field .label {
+	margin: 25px;
+	line-height: 1.6em;
+}
+
+.field .input {
+	position: absolute;
+	left: 200px;
+	line-height: 1.6em;
+	margin-bottom: 5px;
+}
+
+.remove_add {
+	position: relative;
+	left: 192px;
+}
+
+/* Errors */
+
+.errorExplanation {
+	color: red;
+}

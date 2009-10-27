@@ -1,0 +1,53 @@
+<%= f.error_messages %>
+
+<div class="field">
+  <%= f.label :title, "Title:", :class => 'label' %>
+  <%= f.text_field :title, :class => 'input' %>
+</div>
+
+<div class="field">
+  <%= f.label :isbn, "ISBN:", :class => 'label'%>  
+  <%= f.text_field :isbn, :class => 'input' %>
+</div>
+
+<div class="field">
+  <%= f.label :publisher, "Publisher:", :class => 'label' %>
+  <%= f.text_field :publisher, :class => 'input' %>
+</div>
+
+<div class="field">
+  <%= f.label :catagory, "Catagory:", :class => 'label' %>
+  <%= select_tag "catagory", "<option>Fiction</option>
+                            <option>Science Fiction</option>
+                            <option>Non-Fiction</option>
+                            <option>Textbook</option>", :class => 'input' %>
+</div>
+
+<div id="authors">
+  <%= render :partial => 'author', :collection => @book.authors %>
+</div>
+
+<div class="field">
+  <%= link_to_function "Add an Author" do |page| 
+    page.insert_html :bottom, :authors, :partial => 'author', :object => Author.new
+  end %>
+</div>
+
+<div class="field">
+  <%= f.label :price, "Price:", :class => 'label' %>
+  <%= f.text_field :price, :class => 'input' %>
+</div>
+
+<div class="field">
+  <%= f.label :min_required, "Minimum in Stock:", :class => 'label' %>
+  <%= f.text_field :min_required, :class => 'input' %>
+</div>
+
+<div class="field">
+  <%= f.label :year, "Year", :class => 'label' %>
+  <%= f.text_field :year, :class => 'input' %>
+</div>
+
+<div class="field">
+  <%= f.submit 'Create', :class => 'submit' %>
+</div>

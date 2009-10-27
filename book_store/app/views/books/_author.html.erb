@@ -1,0 +1,23 @@
+<div class="authors">
+<% fields_for "book[author_attributes][]", author do |af| %>
+
+  <div class="field">
+    <%= af.label :first_name, "Author First Name:", :class => 'label' %>
+    <%= af.text_field :first_name, :index => nil, :class => 'input' %>
+  </div>
+  
+  <div class="field">
+    <%= af.label :last_name, "Author Last Name:", :class => 'label' %>
+    <%= af.text_field :last_name, :index => nil, :class => 'input' %>
+  </div>
+  
+    <% if author.new_record? %>
+      <%= link_to_function "remove", "$(this).parent().remove();", :class => 'remove_add' %>
+    <% else %>
+      <%= link_to_function "remove", "$(this).next('.should_destroy').val(1); $(this).parent().hide();", :class => 'remove_add'%>
+      <%= af.hidden_field :id, :index => nil %>
+      <%= af.hidden_field :should_destroy, :index => nil, :class => 'should_destroy', :value => '0' %>      
+    <% end %>
+    
+<% end %>
+</div>

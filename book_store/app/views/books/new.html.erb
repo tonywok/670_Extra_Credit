@@ -1,0 +1,9 @@
+<h1>Add New Book</h1>
+
+<div id='form_container'>
+<% form_for @book do |f| %>
+  <%= render :partial => 'fields', :locals => { :f => f }%>
+<% end %>
+</div>
+
+<%= link_to 'Back', books_path %>

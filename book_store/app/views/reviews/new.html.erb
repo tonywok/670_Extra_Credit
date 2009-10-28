@@ -1,0 +1,20 @@
+<h1><%= "Your Thoughts on \'#{@book.title}\'" %></h1>
+
+<% form_for @review do |f| %>
+  <%= f.error_messages %>
+  <%= f.hidden_field :book_id, :value => @book.id %>
+  
+  <div class="field">
+    <%= f.label :name, "Your Name:", :class => 'label' %>
+    <%= f.text_field :name, :class => 'input'%>
+  </div>
+  
+  <div class="field">
+    <%= f.label :review, "Thoughts:", :class => 'label' %>
+    <%= f.text_area :review, :class => 'input', :rows => '10' %>
+  </div>
+  
+  <div class="field">
+    <%= f.submit 'Create', :class => 'submit' %>
+  </div>
+<% end %>

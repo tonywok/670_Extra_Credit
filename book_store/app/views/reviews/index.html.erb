@@ -1,0 +1,15 @@
+<div id="reviews">
+  <h1><%= "Reviews for " + @book.title %></h1>
+  <ol>
+  <% @reviews.each do |r| %>
+    <li>
+      <div class="review_title">
+        <%= r.name + " said:"%>
+      </div>
+      <p>
+        <%= r.review %>
+      </p>
+    </li>
+  <% end %>
+  </ol>
+</div>

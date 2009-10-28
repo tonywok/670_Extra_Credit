@@ -14,7 +14,7 @@
     <% if author.new_record? %>
       <%= link_to_function "remove", "$(this).parent().remove();", :class => 'remove_add' %>
     <% else %>
-      <%= link_to_function "remove", "$(this).next('.should_destroy').val(1); $(this).parent().hide();", :class => 'remove_add'%>
+      <%= link_to_function "remove", "$(this).siblings('.should_destroy').val('1'); $(this).parent().hide();", :class => 'remove_add'%>
       <%= af.hidden_field :id, :index => nil %>
       <%= af.hidden_field :should_destroy, :index => nil, :class => 'should_destroy', :value => '0' %>      
     <% end %>

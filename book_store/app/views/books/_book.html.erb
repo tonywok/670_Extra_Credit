@@ -2,10 +2,17 @@
   <img src="/images/book-icon-gif.gif" width="180" height="180" alt="Book Icon Gif">
   <ul class="book">
     <li class="title"><%= book.title + " (ISBN: #{book.isbn})" %></li>
+    
     <li class="author"><%= "by: #{book.authors.first.first_name} #{book.authors.first.last_name}" %></li>
+    
     <li><%= "Published by #{book.publisher} in #{book.year}" %></li>
+    
     <li class="price"><%= "$#{book.price}" %><a id="add_to_cart" href="#">Add to Cart</a></li>
+    
     <li><%= "in stock: #{book.min_required}" %></li>
-    <li><%= "Reviews "+ link_to("(#{book.reviews.count})", reviews_path(book)) %>  <a href="#">Add a Review</a></li>
+    
+    <li><%= "Reviews " + link_to("(#{book.reviews.count})", book_reviews_path(book)) %> <li>
+
+    <li><%= link_to("Add a Review", new_book_review_path(book)) %> </li>
   </ul>
 </div>

@@ -1,6 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
   
   map.resources :books
+  
+  map.resources :books do |reviews|
+    reviews.resources :reviews
+  end
+  
+  #map.reviews_for "books/:id/reviews", :controller => 'reviews', :action => 'index', :conditions => {:method => 'get'}
+  #map.new_review_for "reviews/new/:book_id", :controller => 'reviews', :action => 'new'
   map.resources :reviews
   
   # The priority is based upon order of creation: first created -> highest priority.

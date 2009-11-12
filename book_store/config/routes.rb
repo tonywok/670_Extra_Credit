@@ -5,6 +5,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :books do |reviews|
     reviews.resources :reviews
   end
+  map.store 'store', :controller => 'store', :action => 'index'
+  map.add_to_cart 'store/:id', :controller => 'store', :action => 'add_to_cart'
   
   #map.reviews_for "books/:id/reviews", :controller => 'reviews', :action => 'index', :conditions => {:method => 'get'}
   #map.new_review_for "reviews/new/:book_id", :controller => 'reviews', :action => 'new'

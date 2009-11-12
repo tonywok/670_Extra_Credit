@@ -1,11 +1,11 @@
-class Cart
+class Cart 
   attr_reader :items
-
+  
   def initialize
     @items = []
   end
-
-  def add_product(book)
+  
+  def add_book(book)
     current_item = @items.find {|item| item.book == book}
     if current_item
       current_item.increment_quantity
@@ -15,8 +15,8 @@ class Cart
     end
     current_item
   end
-
-  def remove_product(book)
+  
+  def remove_book(book)
     current_item = @items.find {|item| item.book == book}
     current_item.decrement_quantity
     if current_item.quantity == 0
@@ -24,13 +24,13 @@ class Cart
     end
     current_item
   end
-
+  
   def total_items
     @items.sum { |item| item.quantity }
   end
-
+  
   def total_price
     @items.sum { |item| item.price }
   end
-end
 
+end

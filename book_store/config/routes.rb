@@ -5,6 +5,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :books do |reviews|
     reviews.resources :reviews
   end
+  
+  map.sign_up 'sign_up', :controller => 'users', :action => 'new'
+  
+  map.empty_cart 'store/empty_cart', :controller => 'store', :action => 'empty_cart'
   map.store 'store', :controller => 'store', :action => 'index'
   map.add_to_cart 'store/:id', :controller => 'store', :action => 'add_to_cart'
   

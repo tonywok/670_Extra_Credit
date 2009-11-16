@@ -12,9 +12,22 @@ class StoreController < ApplicationController
     redirect_to(store_path)
   end
   
+  def remove_from_cart
+    begin
+      book = Book.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error("Attempt to access invalid product #{params[:id]}")
+      redirect_to_index("Invalid book")
+    else
+      @cart = find_cart
+      @current_item = @cart.remove_book(book)
+      redirect_to(store_path)
+    end
+  end
+  
   def empty_cart
     session[:cart] = nil
-    redirect_to_index
+    redirect_to(store_path)
   end
   
   private

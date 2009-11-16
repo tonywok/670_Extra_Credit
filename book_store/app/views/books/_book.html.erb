@@ -3,11 +3,11 @@
   <ul class="book">
     <li class="title"><%= book.title + " (ISBN: #{book.isbn})" %></li>
     
-    <li class="author"><%= "by: #{book.authors.first.first_name} #{book.authors.first.last_name}" %></li>
+    <li class="author"><%= "By:#{get_authors(book)}" %></li>
     
     <li><%= "Published by #{book.publisher} in #{book.year}" %></li>
     
-    <li class="price"><%= "$#{book.price}" %><a id="add_to_cart" href="#">Add to Cart</a></li>
+    <li class="price"><%= "$#{book.price}" %>  <%= link_to "add to cart", add_to_cart_path(book)%></li>
     
     <li><%= "in stock: #{book.min_required}" %></li>
     

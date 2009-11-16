@@ -13,4 +13,8 @@ module ApplicationHelper
     end
     author_listing.to_s.chop.chop
   end
+  
+  def current_user
+    @current_user ||= User.find(session[:current_user_id])
+  end
 end

@@ -24,6 +24,12 @@ ul.book .author {
 	font-size: 1.2em;
 }
 
+#books {
+	width: 800px;
+	margin: 25px;
+	border: 1px solid black;
+}
+
 ul.book #add_to_cart {
 	margin-left: 10px;
 	background-color: #999;
@@ -90,4 +96,11 @@ div#book {
 #reviews p {
 	font-size: 1.5em;
 	font-style: strong;
+}
+
+/* Cart */
+
+#cart {
+	border: 1px black solid;
+	width: 400px;
 }

@@ -1,7 +1,8 @@
 class StoreController < ApplicationController
   def index
-    @books = Book.find(:all)
-    @cart = find_cart
+    
+      @books = Book.find(:all)
+      @cart = find_cart
   end
   
   def add_to_cart

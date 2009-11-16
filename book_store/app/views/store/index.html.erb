@@ -1,3 +1,8 @@
 <h1>Book Store</h1>
-<%= render :partial => "cart" %>
+<%= link_to "Log out", log_out_path %>
+<%= session[:current_user_id]%>
+<%= current_user.username %>
+<div id="cart">
+  <%= render :partial => "cart" %>
+</div>
 <%= render :partial => "book", :collection => @books %>

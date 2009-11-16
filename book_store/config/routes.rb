@@ -7,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.sign_up 'sign_up', :controller => 'users', :action => 'new'
+  map.log_in 'log_in', :controller => 'sessions', :action => 'new'
+  map.log_out 'log_out', :controller => 'sessions', :action => 'destroy'
   
   map.empty_cart 'store/empty_cart', :controller => 'store', :action => 'empty_cart'
   map.store 'store', :controller => 'store', :action => 'index'

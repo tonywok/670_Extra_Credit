@@ -1,9 +1,11 @@
-<%= link_to "empty_cart", :action => :empty_cart %>
-<br>
-<% @cart.items.each do |cart_item| %>
-  <%=h "#{cart_item.quantity}x " %>
-  <%=h cart_item.title %>
-  <%=h cart_item.calculate_price %>
-  <%= link_to "remove", :action => :remove_from_cart, :id => cart_item.book %>
-  <br/>
-<% end %>
+<div id="cart">
+  <%= link_to "empty_cart", :action => :empty_cart %>
+  <br>
+  <% @cart.items.each do |cart_item| %>
+    <%=h "#{cart_item.quantity}x " %>
+    <%=h cart_item.title %>
+    <%=h cart_item.calculate_price %>
+    <%= link_to "remove", :action => :remove_from_cart, :id => cart_item.book %>
+    <br/>
+  <% end %>
+</div>
